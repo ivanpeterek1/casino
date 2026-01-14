@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack 🃏</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+
+<a href="../index.html">⬅ Zpět</a>
+<h1>🃏 Blackjack</h1>
+
+<div class="balance">
+    Zůstatek: <span id="money"></span> Kč
+</div>
+
+<div class="bet-control">
+    <button onclick="changeBet(-50)">➖</button>
+    Sázka: <strong><span id="bet">50</span> Kč</strong>
+    <button onclick="changeBet(50)">➕</button>
+</div>
+
+<h2>Hráč</h2>
+<div id="player-cards"></div>
+<p>Skóre: <span id="player-score"></span></p>
+
+<h2>Dealer</h2>
+<div id="dealer-cards"></div>
+<p>Skóre: <span id="dealer-score"></span></p>
+
+<div class="controls">
+    <button id="hit">HIT</button>
+    <button id="stand">STAND</button>
+    <button id="reset" style="display:none;">NOVÁ HRA</button>
+</div>
+
+<p id="message"></p>
+
+<script src="../js/money.js"></script>
+<script type="module" src="blackjack.js"></script>
+</body>
+</html>
